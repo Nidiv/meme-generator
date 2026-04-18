@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotMemes🔥</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+
+    <div class="container">
+      <header>
+        <div class="logo">
+          <span class="logo-icon">💀</span>
+          <h1>MemeDrop</h1>
+        </div>
+        <p class="tagline">Fresh memes. No effort required.</p>
+      </header>
+
+      <main>
+        <div class="card" id="memeCard">
+          <div class="card-inner">
+            <div class="loader" id="loader">
+              <div class="spinner"></div>
+              <p>Summoning meme...</p>
+            </div>
+            <img id="memeImg" src="" alt="Random meme" />
+          </div>
+
+          <div class="meta" id="memeMeta">
+            <span class="subreddit" id="subredditLabel">r/—</span>
+            <div class="badge" id="upvoteBadge">
+              <span>▲</span>
+              <span id="upvoteCount">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-primary" id="nextBtn">
+            <span class="btn-text">Next Meme</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <button class="btn btn-secondary" id="autoBtn">
+            <span class="btn-text">Auto: OFF</span>
+            <span class="btn-dot"></span>
+          </button>
+          <a
+            class="btn btn-ghost"
+            id="openBtn"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            Open ↗
+          </a>
+        </div>
+
+        <p class="counter">Memes seen: <strong id="countDisplay">0</strong></p>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
